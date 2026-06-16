@@ -1,7 +1,7 @@
 {
   "name": "react-event-calendar-suite",
   "private": false,
-  "version": "2.5.0",
+  "version": "2.5.1",
   "description": "React Event Calendar Suite - Production-ready React event calendar & scheduler with month/week/day/list/year views, drag-and-drop, RRULE recurrence, ICS import/export, i18n, and timezone support. Style-isolated Ant Design UI for safe embedding in any host app (MUI, Tailwind, Bootstrap). TypeScript, React 18/19, Vite & Next.js.",
   "keywords": [
     "react",
