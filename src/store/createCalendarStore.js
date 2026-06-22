@@ -273,7 +273,12 @@ export const createCalendarStore = (initialState = {}) => {
                 return;
             }
 
-            set({ currentDate: newDate.toISOString() });
+            set({
+                currentDate: newDate.toISOString(),
+                currentWeek: newDate.toISOString(),
+                currentDayIndex: getDayIndex(newDate, state.startOfWeek),
+                weekRange: buildWeekRangeState(newDate, state.startOfWeek),
+            });
             if (options.notify !== false && state.onDateChange) {
                 state.onDateChange(newDate);
             }
